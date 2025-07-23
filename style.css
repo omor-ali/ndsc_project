@@ -1,0 +1,326 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    color: #333;
+  }
+  
+  header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #00509e;
+    margin: 0;
+  }
+  
+  nav ul li {
+    position: relative;
+  }
+  
+  nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #006fba;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #00509e;
+    min-width: 160px;
+    z-index: 1;
+    flex-direction: column;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: flex;
+  }
+  
+  .ndscbdy {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #0a4970, #1a5e1e, #127b54);
+    color: #ffffff;
+  }
+  .ndscabt{
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #88c9e8, #e7ebe4, #75dab5);
+    color: #000;
+  }
+  .dplabt{
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #88c9e8, #e7ebe4, #75dab5);
+    color: #000;
+  }
+
+  .hero{
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #88c9e8, #e7ebe4, #0e563b);
+    color: #000;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #003366;
+    color: white;
+  }
+  
+  /* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #2c3e50;
+  color: #ecf0f1;
+  line-height: 1.6;
+}
+
+  
+  /* Header */
+  header {
+    background-color: #003366;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Navigation styles */
+  nav {
+    background-color: #00509e;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    position: relative;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    background-color: #006fba;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #00509e;
+    flex-direction: column;
+    width: 180px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: flex;
+  }
+  
+  /* Hero/Section */
+  /* This is for Our Sports Section on nav tab (starts here)*/
+  .hero { 
+   text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #88c9e8, #e7ebe4, #75dab5);
+    color: #000;
+  }
+   
+  
+  .hero h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  
+  .hero p, .hero ul, .hero form {
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.1rem;
+  }
+  
+  /* Forms */
+  form input, form select, form button {
+    width: 90%;
+    max-width: 400px;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .hero h2 {
+      font-size: 1.5rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 1.5rem;
+    }
+  
+    .hero {
+      padding: 30px 10px;
+    }
+  
+    nav ul li a {
+      padding: 12px 10px;
+    }
+  
+    form input, form select, form button {
+      font-size: 0.95rem;
+    }
+  }
+/* --- Hamburger Menu Styling --- */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+  }
+  
+  /* Structure wrapper */
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 10px;
+  }
+  
+  /* Responsive Nav */
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 0;
+  }
+  
+  .nav-links li {
+    position: relative;
+  }
+  
+  /* Mobile styles */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #00509e;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .nav-links li a {
+      text-align: center;
+      padding: 12px;
+      border-top: 1px solid #004080;
+    }
+  
+    .dropdown-content {
+      position: static;
+      background-color: #004b89;
+    }
+  
+    .dropdown:hover .dropdown-content {
+      display: none;
+    }
+  
+    .dropdown.active .dropdown-content {
+      display: flex;
+    }
+  }
+  .hero ul {
+    list-style-type: '🔹 ';
+    padding-left: 20px;
+    margin-top: 15px;
+    font-size: 1.05rem;
+  }
+  
+  .hero a {
+    color: #003366;
+    text-decoration: underline;
+  }
+  
+  .hero a:hover {
+    color: #007acc;
+  }
+  
+ /* Logo Section */
+.ndscimg{
+
+    width: 120px;  /* Adjust size to fit your header */
+  height: auto;
+  vertical-align: middle;
+
+}
+
+.dplimg{
+  
+   width: 120px;  /* Adjust size to fit your header */
+  height: auto;
+  vertical-align: middle;
+}

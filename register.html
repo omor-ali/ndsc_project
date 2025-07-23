@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Player Registration | NDSC</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+  <div class="max-w-2xl mx-auto mt-10 bg-white p-8 rounded-2xl shadow-md">
+    <h2 class="text-3xl font-bold mb-6 text-center text-blue-700">NDSC Player Registration</h2>
+    <form id="registrationForm" class="space-y-5">
+      <input type="text" name="name" placeholder="Full Name" required class="w-full p-3 border rounded-xl" />
+      
+      <input type="date" name="dob" required class="w-full p-3 border rounded-xl" />
+
+      <select name="gender" required class="w-full p-3 border rounded-xl">
+        <option value="">Select Gender</option>
+        <option>Male</option>
+        <option>Female</option>
+        <!-- <option>Other</option> -->
+      </select>
+
+      <select name="sport" required class="w-full p-3 border rounded-xl">
+        <option value="">Select Sport</option>
+        <option>Cricket</option>
+        <option>Football</option>
+        <option>Volleyball</option>
+        <option>Carrom</option>
+        <option>Badminton</option>
+      </select>
+
+      <input type="tel" name="phone" placeholder="Contact Number" required class="w-full p-3 border rounded-xl" />
+
+      <input type="email" name="email" placeholder="Email Address" required class="w-full p-3 border rounded-xl" />
+
+      <input type="text" name="emergencyContact" placeholder="Emergency Contact Name & Number" required class="w-full p-3 border rounded-xl" />
+
+      <label class="block text-sm font-medium text-gray-700">Upload Profile Photo:</label>
+      <input type="file" name="photo" accept="image/*" class="w-full p-3 border rounded-xl" />
+
+      <label class="flex items-center space-x-2">
+        <input type="checkbox" name="consent" required />
+        <span>I agree to the terms and conditions</span>
+      </label>
+
+      <button type="submit" class="w-full bg-blue-600 text-white p-3 rounded-xl hover:bg-blue-700">
+        Register
+      </button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("registrationForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Player registered successfully!");
+      // Here you could send data to a server or save to a database
+    });
+  </script>
+</body>
+</html>
